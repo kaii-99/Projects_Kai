@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KW </title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+        <div class="dropdown">
+            <a class="nav-item nav-link dropdown-toggle" 
+            data-toggle = "dropdown" id="accountDropdown"
+            aria-haspopup="true" aria-expanded="false" 
+            href="#">Account</a>
+            <div class="dropdown-menu" aria-labelledby="serviceDropDown">
+                <a class="dropdown-item" id="ChangePass" href="http://localhost:9999/myeshop/ChangePass.html">Change Password</a>
+                <a class="dropdown-item" href="http://localhost:9999/myeshop/login.html">Log Out</a>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#toggleNavbar"
+        aria-controls="toggleNavbar" aria-expanded="false"
+        aria-label="toggleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleNavbar">
+            <div class="navbar-nav mr-sm-auto">
+                <a class="nav-item nav-link" id="home" href="http://localhost:9999/myeshop/homepage.html">Home</a>
+                
+                <div class="dropdown">
+                    <a class="nav-item nav-link dropdown-toggle" 
+                    data-toggle = "dropdown" id="serviceDropDown"
+                    aria-haspopup="true" aria-expanded="false" 
+                    href="#">Services</a>
+                    <div class="dropdown-menu" aria-labelledby="serviceDropDown">
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-link" href="#">Contact Us</a>
+                <a class="nav-item nav-link" id="Payment" href="queryeqs">Payment</a>
+                
+            </div>
+        </div>
+        <form class="form-inline" method="get" action="querysearch">
+            <div class="input-group" role="group">
+                <input type="text" class="form-control" name="searchword" placeholder="Keyword">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </div>
+        </form>
+    </nav>
+    <header id="top_header" class="container-fluid p-0">
+
+        <div class="row h-100  d-flex align-items-center">
+            <h1 id="header_title" class="col text-center text-white font-weight-light bg-dark">
+                <div class="d-md-none display-3">
+                    Welcome to KW TECH PTE.LTD 
+                </div>
+                <div class="d-none d-md-inline display-1">
+                    Welcome to KW TECH PTE.LTD 
+                </div>
+            </h1>
+        </div>
+    </header>
+    <div class="container">
+        <section class="content" id="mission">
+            <p><h1 class="text-sm-left text-md-center text-black">Latest Product</h1></p>
+            <div class="carousel slide" id="featured" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#featured" data-slide-to="0" class="active"></li>
+                    <li data-target="#featured" data-slide-to="1"></li>
+                 
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img class="carouselimg img-fluid" src="image/chip.png">
+                        <div class="carousel-caption bg-dark">
+                            <p>here can add your own description</p>
+                        </div>                    
+                </div>
+                <div class="carousel-item"><img class="carouselimg img-fluid" src="image/chip.png">
+                    <div class="carousel-caption bg-dark">
+                        <p>here can add your own description</p>
+                    </div>
+                </div>
+               
+                </div>
+                <a href="" class="carousel-control-prev" href="#featured"
+                role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#featured" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="services">
+        <h2 class="text-sm-left text-md-center border">Services</h2>
+        <div class="container">
+            <div class="row">
+                <ul class="col-12 justify-content-between nav nav-pills flex-column flex-md-row">
+                    <li class="nav-item"><a class="nav-link active bg-danger" href="#">Service 1</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="#">Service 2</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="#"> Service 3</a></li>
+                </ul>
+                
+                <article class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="image/chip.png" alt="">
+                    <h6 class="card-header text-center">Service 1 description</h6>
+                    <p class="card-body"> description
+                     </p>
+                     <div class="card-footer">
+                        <ul class="mb-3 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-danger" href="#">What is under Service 1</li>
+                            <li class="list-group-item list-group-item-action list-group-item-danger" href="#">What is under Service 1</li>
+                            <li class="list-group-item list-group-item-action list-group-item-danger" href="#">What is under Service 1</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="image/chip.png" alt="">
+                    <h6 class="card-header text-center">Service 2 description</h6>
+                    <p class="card-body"> description
+                     </p>
+                     <div class="card-footer">
+                        <ul class="mb-3 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-danger" href="#">What is under Service 2</li>
+                            <li class="list-group-item list-group-item-action list-group-item-danger" href="#">What is under Service 2</li>
+                            <li class="list-group-item list-group-item-action list-group-item-danger" href="#">What is under Service 2</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="image/chip.png" alt="">
+                    <h6 class="card-header text-center">Service 3 description</h6>
+                    <p class="card-body"> description
+                     </p>
+                     <div class="card-footer">
+                        <ul class="mb-3 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-danger" href="#">What is under Service 3</li>
+                            <li class="list-group-item list-group-item-action list-group-item-danger" href="#">What is under Service 3</li>
+                            <li class="list-group-item list-group-item-action list-group-item-danger" href="#">What is under Service 3</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Before updating dropdown");
+            const urlParams = new URLSearchParams(window.location.search);
+            const email = urlParams.get('email');
+            document.getElementById("accountDropdown").textContent = email;
+            document.getElementById("home").href = "http://localhost:9999/myeshop/homepage.html?email="+email;
+            document.getElementById("Payment").href = "queryeqs?email="+email;
+            document.getElementById("ChangePass").href = "http://localhost:9999/myeshop/ChangePass.html?email="+email;
+            console.log("After updating dropdown");
+        });
+    </script>
+</body>
+</html>
+              

@@ -1,0 +1,47 @@
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+body, .table {
+    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+  width: 100%;
+}
+
+.product-table {
+  color: orange;
+}
+
+.product-image {
+  max-width: 100px; /* Ensures the image fits within its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.save-btn {
+    background: linear-gradient(45deg,#0000ffe7,#7700ffda);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: 20px;
+}
